@@ -1,0 +1,23 @@
+/* 
+@import "../vs/base/browser/ui/list/list.css";
+@import "../vs/base/browser/ui/scrollbar/media/scrollbars.css";
+@import "../vs/base/browser/ui/tree/media/tree.css";
+@import "../vs/base/browser/ui/tree/media/panelviewlet.css"; */
+
+.container {
+  width: 400px;
+  height: 600px;
+  border: 1px solid black;
+}
+
+.monaco-scrollable-element > .scrollbar > .slider {
+  background: rgba(100, 100, 100, 0.4);
+}
+
+.tl-contents {
+  flex: 1;
+}
+
+.monaco-list-row:hover:not(.selected):not(.focused) {
+  background: gainsboro !important;
+}
