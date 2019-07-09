@@ -22,7 +22,12 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [],
+            "styles": [
+              "src/vs/base/browser/ui/list/list.css",
+              "src/vs/base/browser/ui/scrollbar/media/scrollbars.css",
+              "src/vs/base/browser/ui/tree/media/tree.css",
+              "src/vs/base/browser/ui/tree/media/panelviewlet.css"
+            ],
             "scripts": []
           },
           "configurations": {

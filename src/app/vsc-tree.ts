@@ -5,7 +5,7 @@ import { TreeVisibility } from "../vs/base/browser/ui/tree/tree";
 
 @Component({
   selector: "vsc-tree",
-  styleUrls: ["./vsc-tree.css", "../vs/base/browser/ui/list/list.css"],
+  styleUrls: ["./vsc-tree.css"],
   template: `
     <div class="container" #container></div>
   `
@@ -14,7 +14,7 @@ export class VscTree implements AfterViewInit {
   @ViewChild("container", { static: true }) container: ElementRef;
 
   delegate = {
-    getHeight(elm) {
+    getHeight(elm: string) {
       // console.log(elm);
       return 22;
     },
@@ -28,10 +28,10 @@ export class VscTree implements AfterViewInit {
 
   renderer = {
     templateId: "template",
-    renderTemplate(container) {
+    renderTemplate(container: HTMLElement) {
       return container;
     },
-    renderElement(element, index, container) {
+    renderElement(element, index: number, container: HTMLElement) {
       container.innerHTML = element.element;
     },
     disposeElement() {},
@@ -40,7 +40,6 @@ export class VscTree implements AfterViewInit {
 
   constructor(private dataService: DataService) {}
   ngAfterViewInit(): void {
-    // console.log(this.dataService.getData());
     console.log({ IndexTree });
     console.log({ container: this.container });
 
