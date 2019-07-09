@@ -1,4 +1,3 @@
-y
 /*---------------------------------------------------------------------------------------------
  *  Copyright (c) Microsoft Corporation. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.
@@ -11,7 +10,7 @@ import { IMouseEvent, StandardWheelEvent, IMouseWheelEvent } from 'vs/base/brows
 import { ScrollbarHost } from 'vs/base/browser/ui/scrollbar/abstractScrollbar';
 import { HorizontalScrollbar } from 'vs/base/browser/ui/scrollbar/horizontalScrollbar';
 import { ScrollableElementChangeOptions, ScrollableElementCreationOptions, ScrollableElementResolvedOptions } from 'vs/base/browser/ui/scrollbar/scrollableElementOptions';
-import { yalScrollbar } from 'vs/base/browser/ui/scrollbar/verticalScrollbar';
+import { VerticalScrollbar } from 'vs/base/browser/ui/scrollbar/verticalScrollbar';
 import { Widget } from 'vs/base/browser/ui/widget';
 import { TimeoutTimer } from 'vs/base/common/async';
 import { Emitter, Event } from 'vs/base/common/event';
